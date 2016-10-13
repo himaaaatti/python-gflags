@@ -30,7 +30,10 @@
 
 """Contains base classes used to parse and convert arguments."""
 
-import cStringIO
+try:
+    import cStringIO
+except:
+    import io
 import csv
 import string
 
