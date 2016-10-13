@@ -438,7 +438,7 @@ class FlagValues(object):
 
   def _AssertAllValidators(self):
     all_validators = set()
-    for flag in self.FlagDict().itervalues():
+    for flag in self.FlagDict().values():
       for validator in flag.validators:
         all_validators.add(validator)
     self._AssertValidators(all_validators)
